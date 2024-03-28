@@ -91,3 +91,48 @@ likeBtns.forEach((likeBtn) => {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  var dropdown = document.getElementById("userDropdown");
+  var userNavItem = document.getElementById("userNavItem");
+
+  // Function to toggle dropdown display
+  function toggleDropdown() {
+    if (dropdown.style.display === "block") {
+      dropdown.style.display = "none";
+    } else {
+      dropdown.style.display = "block";
+    }
+  }
+
+  // Toggle dropdown display when userNavItem is clicked
+  userNavItem.addEventListener("click", function (event) {
+    event.stopPropagation(); // Prevent the click event from bubbling up to the document
+    toggleDropdown();
+  });
+
+  // Close dropdown if user clicks outside of it
+  document.addEventListener("click", function (event) {
+    if (!dropdown.contains(event.target) && event.target !== userNavItem) {
+      dropdown.style.display = "none";
+    }
+  });
+});
+
+function showHide() {
+  var inputan = document.getElementById("passwordKu");
+  if (inputan.type === "password") {
+    inputan.type = "text";
+  } else {
+    inputan.type = "password";
+  }
+} 
+
+function showPW() {
+  var inputan = document.getElementById("passwordMu");
+  if (inputan.type === "password") {
+    inputan.type = "text";
+  } else {
+    inputan.type = "password";
+  }
+} 
