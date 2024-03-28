@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <script defer src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+    <script defer src="/Js/main.js"></script>
+    <title>Login Page</title>
+</head>
+<body>
+    <nav class="main-menu">
+        <div class="logo">
+            <h3><b><span class="text-red">CTFin</span><span class="text-green">AJA</span></b></h3>
+        </div>
+        <ul>
+            <li class="nav-item">
+                <a href="#">
+                    <span class="nav-text">Home</span>
+                </a>
+            </li>
+        
+            <li class="nav-item">
+                <a href="#">
+                    <span class="nav-text">Notification</span>
+                </a>
+            </li>
+        
+            <li class="nav-item active">
+                <a href="#">
+                    <span class="nav-text">Users</span>
+                </a>
+            </li>
+        
+            <li class="nav-item">
+                <a href="#">
+                    <span class="nav-text">Scoreboard</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="profile.html">
+                    <span class="nav-text">Challanges</span>
+                </a>
+            </li>
+        
+            <li class="nav-item" id="userNavItem">
+                <a href="#">
+                    <span class="nav-text">Users</span>
+                    <i class="bx bxs-chevron-down"></i>
+                </a>
+                <div class="dropdown" id="userDropdown">
+                    <ul>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+            </li>
+
+        </ul>
+        <div class="pop-up">
+            <div class="interaction-control-mobile interactions">
+                <div class="toggle" onclick="switchTheme()">
+                    <div class="mode-icon moon">
+                        <i class="bx bxs-moon"></i>
+                    </div>
+                    <div class="mode-icon sun hidden">
+                        <i class="bx bxs-sun"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="interaction-control interactions">
+            <div class="toggle" onclick="switchTheme()">
+                <div class="mode-icon moon">
+                    <i class="bx bxs-moon"></i>
+                </div>
+                <div class="mode-icon sun hidden">
+                    <i class="bx bxs-sun"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <div class="container">
+            <div class="login-container">
+                <form id="contact">
+                    <h2 class="login">LOGIN</h2>
+                    <h3 class="ajakan"><span class="text-green">Login dan Mulailah </span><span class="text-red">Bermain!</span></h3>
+                    <fieldset>
+                        <i class="fa fa-user"></i>
+                        <h5>Username</h5>
+                        <input placeholder="faizal" type="text" tabindex="2" required>
+                    </fieldset>
+                    <fieldset>
+                        <i class="fa fa-lock"></i>
+                        <h5>Password</h5>
+                        <input placeholder="Password" id="passwordKu" type="password" tabindex="3" required>
+                        <input class="checkbox" type="checkbox" onclick="showHide()" tabindex="2"> Tampilkan Password
+                        <a href="register.html">Belum punya akun?</a>
+                    </fieldset>
+                    <fieldset>
+                        <button name="submit" type="submit" id="contact-submit" data-submit="login succesfully">Login!</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
