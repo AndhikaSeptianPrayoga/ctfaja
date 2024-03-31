@@ -1,1 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+    <script defer src="main.js"></script>
+    <title>Login Page</title>
+</head>
+<body>
+    <nav class="main-menu">
+        <div class="logo">
+            <h3><b><span class="text-red">CTFin</span><span class="text-green">AJA</span></b></h3>
+        </div>
+        <ul>
+            <li class="nav-item">
+                <a href="#">
+                    <span class="nav-text">Home</span>
+                </a>
+            </li>
+        
+            <li class="nav-item">
+                <a href="#">
+                    <span class="nav-text">Notification</span>
+                </a>
+            </li>
+        
+            <li class="nav-item active">
+                <a href="#">
+                    <span class="nav-text">Users</span>
+                </a>
+            </li>
+        
+            <li class="nav-item">
+                <a href="#">
+                    <span class="nav-text">Scoreboard</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#">
+                    <span class="nav-text">Challanges</span>
+                </a>
+            </li>
+        
+            <li class="nav-item" id="userNavItem">
+                <a href="#">
+                    <span class="nav-text">Users</span>
+                    <i class="bx bxs-chevron-down"></i>
+                </a>
+                <div class="dropdown" id="userDropdown">
+                    <ul>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+            </li>
 
+        </ul>
+        <div class="pop-up">
+            <div class="interaction-control-mobile interactions">
+                <div class="toggle" onclick="switchTheme()">
+                    <div class="mode-icon moon">
+                        <i class="bx bxs-moon"></i>
+                    </div>
+                    <div class="mode-icon sun hidden">
+                        <i class="bx bxs-sun"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="interaction-control interactions">
+            <div class="toggle" onclick="switchTheme()">
+                <div class="mode-icon moon">
+                    <i class="bx bxs-moon"></i>
+                </div>
+                <div class="mode-icon sun hidden">
+                    <i class="bx bxs-sun"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="privacy-policy-container">
+            <h2>Privacy Policy</h2>
+          </div>
+          
+        <div class="privacy_policy">
+            <section>
+                <h2>Information</h2>
+              
+                <ul>
+                    <li><strong>Cookie Policy:</strong> We use cookies to enhance user experience and analyze traffic on our website.</li>
+                    <li><strong>Data Sharing with Third Parties:</strong> We will not share users' personal information with third parties without their permission, except as required by law.</li>
+                    <li><strong>Data Security:</strong> We take appropriate security measures to protect user data from unauthorized access or misuse.</li>
+                    <li><strong>User Rights:</strong> Users have the right to access, update, and delete their personal information stored by us.</li>
+                    <li><strong>Privacy Policy Changes:</strong> Our privacy policy may be updated from time to time, and such changes will be communicated to users through our website.</li>
+                </ul>
+                <h2>Information We Collect</h2>
+                <p>We collect information about you in three primary ways:</p>
+                <ul>
+                    <li>Information You Provide to Us</li>
+                    <li>Information We Collect Automatically</li>
+                    <li>Information We Collect from Other Sources</li>
+                </ul>
+            </section>
+            <section>
+                <h2>How We Use Information</h2>
+                <p>We may use the information we collect for various purposes, including:</p>
+                <ul>
+                    <li>To provide, maintain, and improve our services</li>
+                    <li>To personalize your experience and deliver relevant content</li>
+                    <li>To communicate with you about products, services, and promotions</li>
+                </ul>
+            </section>
+        </div>
+    
+        <footer>
+            <div class="content-footer">
+                <h3> CTFinAja</h3>
+                <a href="police.html">Privacy Policy</a>
+                <a href="disclaimer.html">Disclaimer</a>
+            </div>
+            <div class="copyright">
+                <b> Copy Right @CTFinAja </b>
+            </div>
+        </footer>
+    </main>
+    
+</body>
+</html>
