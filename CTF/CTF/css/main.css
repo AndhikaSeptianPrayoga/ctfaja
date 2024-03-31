@@ -10,6 +10,11 @@
     font-family: "Nunito", sans-serif;
 }
 
+main {
+    padding-bottom: 150px; 
+}
+
+
 :root {
     --bg-body: rgb(245, 247, 255);
     --primary-color: rgb(42, 51, 65);
@@ -431,6 +436,7 @@ body::-webkit-scrollbar-thumb {
 .image-container {
     flex: 1;
     text-align: center;
+    margin-bottom: 100px;
 }
 
 .text-container {
@@ -464,6 +470,132 @@ body::-webkit-scrollbar-thumb {
     
     .image-container img {
         max-width: 100%;
+
     }
 }
+
+/*/ Footer*/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color:   var (--bg-body);
+    padding: 10px;
+    margin-top: 30px; 
+    min-height: 50px;
+    
+}
+
+.content-footer {
+    text-align: left;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.content-footer h3 {
+    margin-left: 10px;
+}
+
+.content-footer a {
+    margin: 0 10px;
+    text-decoration: none; 
+    color: black; 
+    color: var(--primary-color);
+}
+
+.content-footer a:hover{
+    color: var(--accent-color);
+}
+
+.copyright {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-top: 1px solid black; 
+    padding-top: 10px;
+}
+
+/*/police */
+
+.privacy-policy-container {
+    background-color: #f0f0f0; /* Warna abu-abu */
+    padding: 20px;
+    text-align: center;
+}
+
+.privacy_policy {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px; /* Sesuaikan lebar maksimum jika diperlukan */
+}
+
+.privacy_policy section {
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px; /* Sesuaikan lebar maksimum jika diperlukan */
+}
+
+.privacy_policy h1, .privacy_policy h2 {
+    color: #333;
+}
+
+.privacy_policy ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.privacy_policy a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.privacy_policy a:hover {
+    text-decoration: underline;
+}
+
+
+
+/*/ disclaimer */
+
+.disclaimer {
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.disclaimer h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.disclaimer p {
+    margin-bottom: 10px;
+}
+
+.disclaimer ol {
+    margin-bottom: 10px;
+}
+
+.disclaimer li {
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+.disclaimer strong {
+    font-weight: bold;
+}
+
+.disclaimer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.disclaimer a:hover {
+    text-decoration: underline;
+}
+
+
+
 
